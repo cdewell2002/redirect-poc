@@ -15,7 +15,7 @@
                 // Fallback to Play Store after delay
                 setTimeout(function () {
                     window.location = "https://play.google.com/store/apps/details?id=com.instagram.android";
-                }, 2000);
+                }, 5000);
             } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
                 // Try to open Instagram app
                 window.location = "instagram://app";
@@ -23,7 +23,7 @@
                 // Fallback to App Store after delay
                 setTimeout(function () {
                     window.location = "https://apps.apple.com/app/instagram/id389801252";
-                }, 2000);
+                }, 5000);
             } else {
                 // Fallback for other platforms
                 window.location = "https://www.instagram.com";
